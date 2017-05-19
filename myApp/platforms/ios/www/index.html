@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-mobile/jquery.mobile-1.4.5.css" />
+
+    <title>App Title</title>
+</head>
+
+<body>
+
+    <div data-role="page" id="info-page">
+      
+        <div data-role="header">
+            <h1 data-role="titulo">Meditations</h1>
+        </div>
+
+        <div data-role="content">
+            <ul data-role="listview" id="prof-list" data-divider-theme="a" data-inset="true">
+            </ul>
+        </div>
+
+        <div data-role="footer" data-position="fixed" data-id="barra_links" data-theme="a">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" data-icon="star">Meditations</a></li>
+                    <li><a href="#" data-icon="delete">Mantras</a></li>
+                    <li><a href="#" data-icon="grid">Books</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>
+
+    </div> 
+
+    <div data-role="page" id="details-page">
+        <div data-role="header"><a href="#" data-rel="back" data-role="button" data-icon="carat-l" data-iconpos="notext" data-transition="slide">Meditaciones</a>
+
+             <h1 data-role="title-medit">Meditation Details</h1>
+
+        </div>
+
+        <div data-role="content">            
+            <img id="medit_img" data-role="img-medit" style="margin: 0 auto; display:block; width:30%" src="http://codiqa.com/static/images/v2/image.png" alt="image"/>
+
+            <div data-role="collapsible" data-collapsed="false" data-collapsed-icon="carat-r" data-expanded-icon="carat-d">
+                <h3>Duración</h3>
+                <p data-role="dur-medit"></p>    
+            </div>
+        
+            <div data-role="collapsible" data-collapsed="false" data-collapsed-icon="carat-r" data-expanded-icon="carat-d">
+                <h3>Descripción</h3>
+                <p data-role="desc-medit"></p>
+            </div>
+                        
+            <a data-role="button" data-theme="b" href="">Descargar</a>
+        </div>
+
+        <div data-role="footer" data-position="fixed" data-id="barra_links" data-theme="a">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" data-icon="star">Meditations</a></li>
+                    <li><a href="#" data-icon="delete">Mantras</a></li>
+                    <li><a href="#" data-icon="grid">Books</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-mobile/jquery.mobile-1.4.5.js"></script>
+    <script type="text/javascript" src="js/app/app.js"></script>
+    <script type="text/javascript" src="js/app/pages.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
